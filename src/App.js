@@ -1,12 +1,16 @@
 import React from "react";
-import {firebaseConfig} from "./firebase"
+import Sidebar from "./Sidebar";
+import Chat from "./Chat";
 import "./App.css";
 
 function App() {
   return (
     // BEM convention naming
     <div className="app">
-      <h1>LET'S BUILD THE WHATSAPP CLONE !!!</h1>
+      <div className="app__body">
+        <Sidebar />
+        <Chat />
+      </div>
     </div>
   );
 }
